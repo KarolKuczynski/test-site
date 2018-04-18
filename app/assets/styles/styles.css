@@ -1,0 +1,7 @@
+$mainColor: #4e52d3;
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $mainColor;   
+}
