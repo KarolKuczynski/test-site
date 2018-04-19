@@ -1,7 +1,5 @@
-$mainColor: #4e52d3;
-
-body {
-    margin: 0;
-    padding: 0;
-    color: $mainColor;   
-}
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
