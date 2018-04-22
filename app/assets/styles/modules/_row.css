@@ -64,8 +64,49 @@
         }
     }
 
+    @mixin atLarge {
+        &__b-margin-until-large {
+            margin-bottom: 0;
+        }
+
+        &__large-4 {
+            /*float: left;*/
+            width: 33%;
+            display: inline-block;
+        }
+
+        &__large-4--larger {
+            width: 36.5%;
+        }
+
+        &__large-6 {
+            width: 49%;
+            display: inline-block;
+        }
+    
+        &__large-8 {
+            /*float: left;*/
+            width: 66%;
+            display: inline-block;
+        }
+
+        &__large-8--smaller {
+            width: 63%;
+        }
+    }
+
     &--equal-height-at-medium {
         @mixin atMedium {
+            display: flex;
+        }
+
+        & > div {
+            display: flex;
+        }
+    }
+
+    &--equal-height-at-large {
+        @mixin atLarge {
             display: flex;
         }
 
